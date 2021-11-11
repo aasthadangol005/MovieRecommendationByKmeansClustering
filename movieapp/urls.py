@@ -8,6 +8,7 @@ urlpatterns = [
     path('',HomeView.as_view(),name = "home"),
     path('allmovies/',MovieView.as_view(),name="movie"),
     path('allmovies-rate/',views.rate_allmovies,name = 'rate_allmovies'),
+   
     path('contact/',views.contact, name= "contact"),
     path('comedy/',ComedyView.as_view(),name="comedy"),
     path('action/',ActionView.as_view(),name = "action"),

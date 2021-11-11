@@ -212,7 +212,7 @@ class MovieView(ListView):
     model=MovieList
     template_name = "list.html"
     context_object_name = 'allmovies'
-    ordering= ['-id']
+  
     paginate_by = 12
 
 def rate_allmovies(request): 
@@ -234,8 +234,9 @@ def rate_allmovies(request):
         return JsonResponse({'success':'true','rating':rating},safe = False)
         
     return JsonResponse({'success':'false'})
-   
-             
+
+
+
 
 
 

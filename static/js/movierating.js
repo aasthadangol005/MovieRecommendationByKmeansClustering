@@ -17,7 +17,7 @@ $(document).ready(function(){
                 if (resp.success == "true"){
                     alert(`Successfully rated ${resp.rating}`)
                 }else{
-                    alert('Ups!Something went wrong, please try again.')
+                    alert('you have already rated this movie.')
                 }
                 location.reload()
             }
